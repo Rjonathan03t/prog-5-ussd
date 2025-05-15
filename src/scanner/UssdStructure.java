@@ -1,15 +1,19 @@
 package scanner;
 
-import src.function.mvola.MvolaStructure;
+import function.mvola.MvolaStructure;
 
 import java.util.Scanner;
 
 public class UssdStructure {
     private final Scanner scanner = new Scanner(System.in);
-    private final MvolaStructure mvolaStructure = new MvolaStructure();
+    private  MvolaStructure mvolaStructure;
+
+    public void setMvolaStructure(MvolaStructure mvolaStructure) {
+        this.mvolaStructure = mvolaStructure;
+    }
+
 
     public void Demarrer() {
-        while (true) {
             System.out.println("\n YAS et MOI");
             System.out.println("1 MVola");
             System.out.println("2 Rappelle moi");
@@ -22,17 +26,17 @@ public class UssdStructure {
             String choix = scanner.nextLine();
 
             switch (choix) {
-                case "1" -> mvolaStructure.MVola();
-                case "2" -> RappelleMoi();
-                case "3" -> SosCredit();
-                case "4" -> ServiceYas();
-                case "5" -> Promotion();
-                case "6" -> ProduitEtDivertissement();
-                case "7" -> BanqueEtMicroFinance();
+                case "1" -> mvolaStructure.Mvola();
+                case "2" -> System.out.println("RappelleMoi()");
+                case "3" -> System.out.println("SosCredit()");
+                case "4" -> System.out.println("ServiceYas()");
+                case "5" -> System.out.println("Promotion()");
+                case "6" -> System.out.println("ProduitEtDivertissement()");
+                case "7" -> System.out.println("BanqueEtMicroFinance()");
                 case "0" -> PageSuivante();
                 default -> System.out.println("choix invalide");
             }
-        }
+
     }
 
     public void PageSuivante (){
@@ -40,11 +44,11 @@ public class UssdStructure {
             System.out.println("8 Mon identite");
             System.out.println("9 Configurer mon mobile");
             System.out.println("00 Page precedente");
-            int choix = scanner.nextInt();
+            String choix = scanner.nextLine();
 
             switch(choix){
-                case "8" -> MonIdentite();
-                case "9" -> ConfigurerMonMobile();
+                case "8" -> System.out.println("MonIdentite()");
+                case "9" -> System.out.println("ConfigurerMonMobile()");
                 case "00" -> Demarrer();
                 default -> System.out.println("choix invalide");
             }
