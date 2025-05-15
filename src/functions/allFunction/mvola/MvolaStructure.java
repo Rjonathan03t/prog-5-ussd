@@ -1,4 +1,4 @@
-package function.mvola;
+package functions.allFunction.mvola;
 
 import scanner.UssdStructure;
 
@@ -22,9 +22,9 @@ public class MvolaStructure {
             System.out.println("3 Mvola Credit ou Epargne");
             System.out.println("4 Retrait d'argent");
             System.out.println("# Page suivante");
-            String choix = scanner.nextLine();
+            String choice = scanner.nextLine();
 
-            switch (choix) {
+            switch (choice) {
                 case "1" -> System.out.println("AcheterCreditOuOffre()");
                 case "2" -> System.out.println("TransfererArgent()");
                 case "3" -> System.out.println("MvolaCreditOuEpargne()");
@@ -44,14 +44,14 @@ public class MvolaStructure {
             System.out.println("8 Banques et Micro-Fincances");
             System.out.println("* Page precedente");
             System.out.println("** Menu principal");
-            String choix = scanner.nextLine();
+            String choice = scanner.nextLine();
 
-            switch (choix) {
+            switch (choice) {
                 case "5" -> System.out.println("PaiementFacture()");
                 case "6" -> System.out.println("MonCompte()");
                 case "7" -> System.out.println("RecevoirArgent()");
                 case "8" -> System.out.println("BanqueEtMicroFinance()");
-                case "*" -> System.out.println("PagePrecedente()");
+                case "*" -> Mvola();
                 case "**" -> ussdStructure.Demarrer();
                 default -> System.out.println("choix invalide");
             }
