@@ -1,20 +1,24 @@
 package functions.allFunction.rappelleMoi;
 
+import functions.allFunction.InvalidChoice;
+
 import java.util.Scanner;
 
 public class RappelleMoiStructure {
     private final Scanner scanner = new Scanner(System.in);
-    public void RappeleMoi(){
-        while(true) {
-            System.out.println("Rappelle moi");
-            System.out.println("1 Envoyer un rappelle moi");
-            System.out.println("2 Aide");
-            int choice = scanner.nextInt();
+    private final InvalidChoice invalidChoice = new InvalidChoice();
 
-            switch(choice){
-                case 1 -> System.out.println("EnvoyerUnRappelleMoi()");
-                case 2 -> System.out.println("Aide()");
-                default -> System.out.println("choix invalide");
+    public void RappeleMoi() {
+        while (true) {
+            System.out.println(
+                    "\n Rappelle moi \n" +
+                    "1 Envoyer un rappelle moi \n" +
+                    "2 Aide");
+            String choice = scanner.nextLine();
+            switch (choice) {
+                case "1" -> System.out.println("EnvoyerUnRappelleMoi()");
+                case "2" -> System.out.println("Aide()");
+                default -> invalidChoice.InvalidChoice();
             }
         }
     }

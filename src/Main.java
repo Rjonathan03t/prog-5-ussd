@@ -1,5 +1,6 @@
 import functions.allFunction.mvola.MvolaStructure;
 import functions.allFunction.rappelleMoi.RappelleMoiStructure;
+import functions.allFunction.sosCredit.SosCreditStructure;
 import scanner.UssdStructure;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -9,9 +10,11 @@ public class Main {
         UssdStructure ussdStructure = new UssdStructure();
         MvolaStructure mvolaStructure = new MvolaStructure();
         RappelleMoiStructure rappelleMoiStructure = new RappelleMoiStructure();
+        SosCreditStructure sosCreditStructure = new SosCreditStructure();
 
         ussdStructure.setMvolaStructure(mvolaStructure);
         ussdStructure.setRappelleMoiStructure(rappelleMoiStructure);
+        ussdStructure.setSosCreditStructure(sosCreditStructure);
         mvolaStructure.setUssdStructure(ussdStructure);
         ussdStructure.Demarrer();
     }
