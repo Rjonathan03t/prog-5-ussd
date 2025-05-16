@@ -1,4 +1,4 @@
-name: Build et Checkstyle
+name: Maven Clean + Checkstyle
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  checkstyle:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,6 +19,13 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '11'
+          cache: 'maven'
 
-      - name: Lancer Maven Checkstyle
-        run: mvn clean verify
+      - name: Supprimer le cache Maven local
+        run: rm -rf ~/.m2/repository
+
+      - name: Nettoyage du projet (clean)
+        run: mvn clean
+
+      - name: Lancer Checkstyle
+        run: mvn checkstyle:check
