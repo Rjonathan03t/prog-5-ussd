@@ -1,6 +1,7 @@
 package scanner;
 
 import functions.allFunction.InvalidChoice;
+import functions.allFunction.monIdentite.MonIdentiteStructure;
 import functions.allFunction.mvola.MvolaStructure;
 import functions.allFunction.rappelleMoi.RappelleMoiStructure;
 import functions.allFunction.serviceYas.ServiceYasStructure;
@@ -15,6 +16,7 @@ public class UssdStructure {
     private RappelleMoiStructure rappelleMoiStructure;
     private SosCreditStructure sosCreditStructure;
     private ServiceYasStructure serviceYasStructure;
+    private MonIdentiteStructure monIdentiteStructure;
 
     public void setMvolaStructure(MvolaStructure mvolaStructure) {
         this.mvolaStructure = mvolaStructure;
@@ -30,6 +32,10 @@ public class UssdStructure {
 
     public void setServiceYasStructure (ServiceYasStructure serviceYasStructure){
         this.serviceYasStructure = serviceYasStructure;
+    }
+
+    public void setMonIdentiteStructure(MonIdentiteStructure monIdentiteStructure){
+        this.monIdentiteStructure = monIdentiteStructure;
     }
 
     public void Demarrer() {
@@ -58,13 +64,11 @@ public class UssdStructure {
         while (true) {
             System.out.println(
                     "\n 5 Mon identite \n" +
-                            "6 Configurer mon mobile \n" +
                             "00 Page precendente");
             String choice = scanner.nextLine();
 
             switch (choice) {
-                case "5" -> System.out.println("MonIdentite()");
-                case "6" -> System.out.println("ConfigurerMonMobile()");
+                case "5" -> monIdentiteStructure.MonIdentite();
                 case "00" -> Demarrer();
                 default -> invalidChoice.InvalidChoice();
             }

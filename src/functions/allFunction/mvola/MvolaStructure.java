@@ -18,16 +18,12 @@ public class MvolaStructure {
         while (true) {
             System.out.println("\n MVOLA \n" +
                     "1 Acheter Credit ou Offre Yas \n" +
-                    "2 Transferer argent (vers toute destination) \n" +
-                    "3 Mvola Credit ou Epargne \n" +
-                    "4 Retrait d'argent \n" +
+                    "2 Retrait d'argent \n" +
                     "# Page suivante");
             String choice = scanner.nextLine();
             switch (choice) {
                 case "1" -> System.out.println("AcheterCreditOuOffre()");
                 case "2" -> System.out.println("TransfererArgent()");
-                case "3" -> System.out.println("MvolaCreditOuEpargne()");
-                case "4" -> System.out.println("RetraitArgent()");
                 case "#" -> PageSuivante();
                 default -> invalidChoice.InvalidChoice();
             }
@@ -38,17 +34,12 @@ public class MvolaStructure {
         while (true) {
             System.out.println(
                     "\n MVOLA \n" +
-                    "5 Paiement Factures & Partenaires \n" +
-                    "6 Mon compte \n" +
-                    "7 Recevoir de l'argent \n" +
+                    "3 Mon compte \n" +
                     "* Page precedente \n" +
                     "** Menu principal");
             String choice = scanner.nextLine();
             switch (choice) {
-                case "5" -> System.out.println("PaiementFacture()");
-                case "6" -> System.out.println("MonCompte()");
-                case "7" -> System.out.println("RecevoirArgent()");
-                case "8" -> System.out.println("BanqueEtMicroFinance()");
+                case "3" -> System.out.println("MonCompte()");
                 case "*" -> Mvola();
                 case "**" -> ussdStructure.Demarrer();
                 default -> invalidChoice.InvalidChoice();

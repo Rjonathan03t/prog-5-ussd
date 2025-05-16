@@ -14,18 +14,12 @@ public class ServiceYasStructure {
                     "\n Services YAS \n" +
                             "1 info credit \n" +
                             "2 Recharge \n" +
-                            "3 Gerer Friends and Family \n" +
-                            "4 Envoyer Credit/Offre/Mega \n" +
-                            "5 Ajouter des jours de validite \n" +
-                            "6 Acheter une offre \n" +
-                            "7 Mon numero \n" +
-                            "0 Page suivante");
+                            "3 Envoyer Credit/Offre/Mega");
             String choice = scanner.nextLine();
             switch(choice){
                 case "1" -> System.out.println("infoCredit()");
                 case "2" -> System.out.println("Recharge()");
-                case "3" -> System.out.println("GererFriends()");
-                case "4" -> System.out.println("AjouterJourValidite");
+                case "3" -> System.out.println("EnvoyerCredit()");
             }
         }
     }
