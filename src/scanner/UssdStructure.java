@@ -29,7 +29,7 @@ public class UssdStructure {
     public void Demarrer() {
         while (true) {
             System.out.println(
-                    "YAS et MOI \n" +
+                    "\n YAS et MOI \n" +
                             "1 Mvola \n" +
                             "2 Rappelle moi \n" +
                             "3 SOS Credit \n" +
