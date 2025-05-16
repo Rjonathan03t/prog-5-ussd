@@ -1,7 +1,7 @@
-package functions.allFunction.mvola;
+package main.java.allFunctions.mvola;
 
-import functions.allFunction.InvalidChoice;
-import scanner.UssdStructure;
+import main.java.allFunctions.InvalidChoice;
+import main.java.allFunctions.scanner.UssdStructure;
 
 import java.util.Scanner;
 

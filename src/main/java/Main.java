@@ -1,11 +1,11 @@
-import functions.allFunction.monIdentite.MonIdentiteStructure;
-import functions.allFunction.mvola.MvolaStructure;
-import functions.allFunction.rappelleMoi.RappelleMoiStructure;
-import functions.allFunction.serviceYas.ServiceYasStructure;
-import functions.allFunction.sosCredit.SosCreditStructure;
-import scanner.UssdStructure;
+package main.java;
 
-import java.util.Timer;
+import main.java.allFunctions.monIdentite.MonIdentiteStructure;
+import main.java.allFunctions.mvola.MvolaStructure;
+import main.java.allFunctions.rappelleMoi.RappelleMoiStructure;
+import main.java.allFunctions.serviceYas.ServiceYasStructure;
+import main.java.allFunctions.sosCredit.SosCreditStructure;
+import main.java.allFunctions.scanner.UssdStructure;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.

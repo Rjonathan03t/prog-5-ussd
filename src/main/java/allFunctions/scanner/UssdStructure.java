@@ -1,11 +1,11 @@
-package scanner;
+package main.java.allFunctions.scanner;
 
-import functions.allFunction.InvalidChoice;
-import functions.allFunction.monIdentite.MonIdentiteStructure;
-import functions.allFunction.mvola.MvolaStructure;
-import functions.allFunction.rappelleMoi.RappelleMoiStructure;
-import functions.allFunction.serviceYas.ServiceYasStructure;
-import functions.allFunction.sosCredit.SosCreditStructure;
+import main.java.allFunctions.InvalidChoice;
+import main.java.allFunctions.monIdentite.MonIdentiteStructure;
+import main.java.allFunctions.mvola.MvolaStructure;
+import main.java.allFunctions.rappelleMoi.RappelleMoiStructure;
+import main.java.allFunctions.serviceYas.ServiceYasStructure;
+import main.java.allFunctions.sosCredit.SosCreditStructure;
 
 import java.util.Scanner;
 

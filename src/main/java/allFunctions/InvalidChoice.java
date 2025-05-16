@@ -1,4 +1,4 @@
-package functions.allFunction;
+package main.java.allFunctions;
 
 public class InvalidChoice {
     public void InvalidChoice(){

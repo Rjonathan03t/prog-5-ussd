@@ -1,6 +1,6 @@
-package functions.allFunction.monIdentite;
+package main.java.allFunctions.monIdentite;
 
-import functions.allFunction.InvalidChoice;
+import main.java.allFunctions.InvalidChoice;
 
 import java.util.Scanner;
 

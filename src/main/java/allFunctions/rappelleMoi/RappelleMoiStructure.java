@@ -1,6 +1,6 @@
-package functions.allFunction.rappelleMoi;
+package main.java.allFunctions.rappelleMoi;
 
-import functions.allFunction.InvalidChoice;
+import main.java.allFunctions.InvalidChoice;
 
 import java.util.Scanner;
 

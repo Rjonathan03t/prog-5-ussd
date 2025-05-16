@@ -1,6 +1,6 @@
-package functions.allFunction.sosCredit;
+package main.java.allFunctions.sosCredit;
 
-import functions.allFunction.InvalidChoice;
+import main.java.allFunctions.InvalidChoice;
 
 import java.util.Scanner;
 

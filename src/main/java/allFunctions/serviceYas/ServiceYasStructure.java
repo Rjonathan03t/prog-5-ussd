@@ -1,6 +1,6 @@
-package functions.allFunction.serviceYas;
+package main.java.allFunctions.serviceYas;
 
-import functions.allFunction.InvalidChoice;
+import main.java.allFunctions.InvalidChoice;
 
 import java.util.Scanner;
 
